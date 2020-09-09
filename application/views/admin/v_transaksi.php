@@ -6,10 +6,9 @@
             <div class="row">
               <div class="card">
                     <div class="card-header">
-                      <h4>Stock Barang</h4>
+                      <h4>Transaksi Barang</h4>
                     </div>
                     <div class="card-body">
-                      <a href="<?=base_url();?>master/tambah" class="btn btn-primary mb-3"><i class="fa fa-plus"></i>Tambah Barang</a>
                       <table class="table table-hover">
                         <thead>
                           <tr>
@@ -27,7 +26,7 @@
                               <td><?=$row['nama_barang']?></td>
                               <td><?=$row['jumlah']?></td>
                               <td>Rp.<?=number_format($row['harga_jual'], 0, ".", ".")?></td>
-                              <td><a href="<?=base_url('master/ubah/'.$row['id']);?>" class="btn btn-warning btn-sm">Ubah Barang</a> &nbsp <a href="<?=base_url('master/hapus/'.$row['id']);?>" class="btn btn-danger btn-sm">Hapus Barang</a></td>
+                              <td><a href="<?=base_url('master/transaksi_beli/'.$row['id']);?>" class="btn btn-primary btn-sm">Beli Barang</a></td>
                             </tr>                            
                           <?php } ?>
                           

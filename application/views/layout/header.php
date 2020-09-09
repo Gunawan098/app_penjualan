@@ -96,7 +96,7 @@
         <ul class="navbar-nav navbar-right">
           <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
             <img alt="image" src="<?=base_url();?>assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-            <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div></a>
+            <div class="d-sm-none d-lg-inline-block">Hi, Admin</div></a>
             <div class="dropdown-menu dropdown-menu-right">
               <!-- <div class="dropdown-title">Logged in 5 min ago</div>
               <a href="features-profile.html" class="dropdown-item has-icon">
@@ -126,7 +126,16 @@
           </div>
           <ul class="sidebar-menu">
               <li class="menu-header">Master</li>
-              <li><a class="nav-link" href="<?=base_url()?>master"><i class="far fa-square"></i> <span>Master</span></a></li>
+              <!-- <li><a class="nav-link" href="<?=base_url()?>master"><i class="far fa-square"></i> <span>Master</span></a></li> -->
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Master</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="<?=base_url()?>master/pembelian">Pembelian Barang</a></li>
+                  <li class="active"><a class="nav-link" href="<?=base_url()?>master">Stock Barang</a></li>
+                </ul>
+              </li>
+              <li class="menu-header">Transaksi Penjualan</li>
+              <li><a class="nav-link" href="<?=base_url()?>master/transaksi"><i class="far fa-square"></i> <span>Transaksi Penjualan</span></a></li>
               <!-- <li class="menu-header">Dashboard</li>
               <li class="nav-item dropdown active">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
